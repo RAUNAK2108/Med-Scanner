@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MedScan – Prescription Scanner</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <nav>
+        <h1><i class="fa-solid fa-stethoscope"></i> MedScan</h1>
+        <button class="nav-btn">Login</button>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-text">
+            <h2>Scan Your Prescription in One Click</h2>
+            <p>Extract medicines, compare prices, find nearby stores & get dosage reminders.</p>
+            <label class="upload-btn">
+                <input type="file" id="prescriptionInput" accept="image/*">
+                <i class="fa-solid fa-upload"></i> Upload Prescription
+            </label>
+
+            <button onclick="extractMedicines()" class="scan-btn">
+                <i class="fa-solid fa-magnifying-glass"></i> Scan Prescription
+            </button>
+        </div>
+
+        <img src="https://cdn-icons-png.flaticon.com/512/3031/3031293.png" class="hero-img">
+    </header>
+
+    <section class="results-section" id="results"></section>
+
+    <footer>
+        <p>Made with ❤️ for Capstone Project | MedScan © 2025</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
